@@ -1,0 +1,313 @@
+site_name: Road
+site_url: https://kvxunz.github.io/
+
+theme:
+  name: material
+  # custom_dir: docs/mkdocs/overrides
+
+  favicon: mkdocs/icon/B.svg
+  icon:
+    logo: simple/xing
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+  features:
+    # 导航功能
+    - navigation.tabs          # 使用Tab来进行分类
+    - navigation.tabs.sticky   # Tab固定在顶部
+    #- navigation.top           # 返回顶部的按钮
+    - navigation.indexes       # Tab会有一个index.md
+    - navigation.tracking      # 地址栏自动更新锚点
+    - toc.follow              # 目录自动滚动
+
+    # 搜索功能
+    - search.suggest          # 搜索建议
+    - search.highlight        # 搜索结果高亮
+    - search.share            # 搜索分享
+
+    # 内容功能
+    - content.tabs.link       # 内容标签页链接
+    - content.code.copy       # 代码复制按钮
+    - content.code.select     # 代码选择
+    - content.code.annotate   # 代码注释
+    - content.action.edit     # 编辑按钮
+    - content.action.view     # 查看源文件按钮
+    - content.tooltips        # 工具提示
+
+    # 其他功能
+    - announce.dismiss        # 公告可关闭
+    - header.autohide         # 标题自动隐藏
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+
+nav:
+  - Home: index.md
+  - Algorithm:
+    - Algo/v.md
+    - Array:
+        - Basics of Array Theory : Algo/Array/Basics of Array Theory.md 
+        - Binary search : Algo/Array/Binary Search.md
+        - Remove Element : Algo/Array/Remove Element.md
+        - Square of sorted array : Algo/Array/Square of sorted array.md
+        - The smallest subarray : Algo/Array/The smallest subarray.md
+        - Spiral Matrix II : Algo/Array/Spiral Matrix II.md
+    - Linked List :
+        - Linked List Theory: Algo/Linked List/Linked List Theory.md
+    - Hash Table :
+        - Hash Table Theory : Algo/Hash Table/Hash Table Theory.md
+    - String :
+        - Reverse String : Algo/String/Reverse String/Reverse String.md
+    - Stacks and Queues:
+        - Theoretical basis : Algo/Stacks and Queues/theoretical basis.md
+    - Binary Tree:
+        - Theoretical basis : Algo/Binary Tree/theoretical basis.md
+    - Backtracking:
+        - Theoretical basis : Algo/Backtracking/theoretical basis.md
+    - Greedy:
+        - Theoretical basis : Algo/Greedy/theoretical basis.md
+    - Dynamic Programming:
+        - Theoretical basis : Algo/Dynamic Programming/theoretical basis.md
+    - Monotonic Stack :
+        - Theoretical basis : Algo/Monotonic Stack/theoretical basis.md
+
+  - CS:
+      - Course : CS/Courses/Courses.md
+
+      - Data Structure:
+          - Performance:
+              - Concept: CS/Data Structure/Algorithm Performance/Algorithm Performance.md
+          - Linear:
+              - Array:
+                  - Concept: CS/Data Structure/Linear/Array/Array concept.md
+              - Linear Table:
+                  - Concept: CS/Data Structure/Linear/Linear Table/Concept.md
+              - Queue:
+                  - Concept: CS/Data Structure/Linear/Queue/Concept.md
+              - Stack:
+                  - Concept: CS/Data Structure/Linear/Stack/Concept.md
+          - Tree:
+              - Concept: CS/Data Structure/Tree/Concept.md
+          - Map:
+              - Concept: CS/Data Structure/Map/Concept.md
+          - Search:
+              - Concept: CS/Data Structure/Search/Concept.md
+          - Sort:
+              - Concept: CS/Data Structure/Sort/Concept.md
+
+      - Principles of computer composition:
+          - System Overview: CS/Principles of computer composition/System Overview/System Overview.md
+
+      - Operating System:
+          - Overview: CS/Operating System/Overview/Concept.md
+
+      - Network:
+          - Overview : CS/Network/Overview/Concept.md
+
+  - Math:
+      - Essence : Math/Essence/Concept.md
+      - Calculus:
+          - Differential:
+              - Limit: Math/Calculus/Differential/Limit/Concept.md
+          - Integral:
+              - Overview: Math/Calculus/Integral/Overview/Concept.md
+
+      - Linear Algebra:
+          - Determinant : Math/Linear Algebra/Determinant/Concept.md
+
+      - Probability Theory:
+          - Random Events and Probability: Math/Probability Theory/Random Events and Probability/Concept.md
+
+  - C++:
+      - Basic: C++/Basic/Concept.md
+      - Core: C++/Core/Concept.md
+      - Improve: C++/Improve/Concept.md
+
+  - Project:
+    - Introduce: Project/Introduce/v.md
+    - Linux Server :
+        - Basic:
+            - GCC : Project/Linux/Base/GCC.md
+            - Static Library : Project/Linux/Base/static library.md
+            - Dynamic Library : Project/Linux/Base/dynamic library.md
+            - Makefile: Project/Linux/Base/Makefile.md
+            - GDB: Project/Linux/Base/GDB.md
+            - IO: Project/Linux/Base/IO.md
+
+        - Multi-process:
+            - Process Overview: Project/Linux/Multi-process/Process Overview.md
+        - Multi-threaded:
+            - Threads Overview: Project/Linux/Multi-threaded/Threads Overview.md
+        - Network:
+            - Network Overview: Project/Linux/Network/Network Overview.md
+        - Projects:
+            - Architecture: Project/Linux/Projects/Architecture.md
+    - Backend server :
+        - Linux  :
+            - Core : Project/Backend server/Linux/Core.md
+            - Time  : Project/Backend server/Linux/Time.md
+            - List : Project/Backend server/Linux/List.md
+            - system error: Project/Backend server/Linux/Error.md
+            - Directory file operations: Project/Backend server/Linux/Directory file operations.md
+            - File operations : Project/Backend server/Linux/File operations.md
+        - Process:
+            - Signal: Project/Backend server/Process/Signal.md
+            - Termination: Project/Backend server/Process/Termination.md
+            - Call executable program: Project/Backend server/Process/Call executable program.md
+            - Create process: Project/Backend server/Process/Create process.md
+            - Zombie process: Project/Backend server/Process/Zombie process.md
+            - Multiple processes signals: Project/Backend server/Process/Multiple processes and signals.md
+            - Shared memory: Project/Backend server/Process/Shared memory.md
+            - Circular queue signal: Project/Backend server/Process/Circular queue.md
+        - Network:
+            - Internet communication: Project/Backend server/Network/Internet communication.md
+            - Socket: Project/Backend server/Network/Socket.md
+            - TCP/UPD: Project/Backend server/Network/TCP-UPD.md
+            - Host network byte order: Project/Backend server/Network/Host network byte order.md
+            - Structure: Project/Backend server/Network/Structure.md
+            - Encapsulate socket: Project/Backend server/Network/Encapsulate socket.md
+            - Multi-process network server: Project/Backend server/Network/multi-process network server.md
+            - File transfer: Project/Backend server/Network/File transfer.md
+            - TCP Reliable connection: Project/Backend server/Network/TCP Reliable connection.md
+            - TCP Cache: Project/Backend server/Network/TCP Cache.md
+        - ADF:
+            - ADF_Library: 
+                - _cmpublic_h: Project/Backend server/ADF/ADF_Library/_cmpublic_h.md
+                - _public_h: Project/Backend server/ADF/ADF_Library/_public_h.md
+                - _public_cpp: Project/Backend server/ADF/ADF_Library/_public_cpp.md
+            - String : 
+                - Dch-lrb-s: Project/Backend server/ADF/String operations/Dch-lrb-s.md
+                - Convert-l-to-u: Project/Backend server/ADF/String operations/Convert-l-to-u.md
+                - String replacement: Project/Backend server/ADF/String operations/String replacement.md
+                - Extract: Project/Backend server/ADF/String operations/Extract.md
+                - Regular expression: Project/Backend server/ADF/String operations/Regular expression.md
+                - Split separator: Project/Backend server/ADF/String operations/Split separator.md
+                - C++ foft: Project/Backend server/ADF/String operations/C++ foft.md
+            - Xml :
+                - Xml format string: Project/Backend server/ADF/Xml/Xml.md
+            - Time :
+                - Time Manipulation: Project/Backend server/ADF/Time/Time Manipulation.md
+            - D-File: 
+                - Create-Directory: Project/Backend server/ADF/D-File/Create-Directory.md
+                - File operation : Project/Backend server/ADF/D-File/File operation.md
+                - Cdir: Project/Backend server/ADF/D-File/Cdir.md
+                - write/read file: Project/Backend server/ADF/D-File/Wrf.md
+            - Log-File: 
+                - LogFile: Project/Backend server/ADF/Log-File/LogFile.md
+            - Socket :
+                - C/S: Project/Backend server/ADF/Socket/CS.md
+                - Test: Project/Backend server/ADF/Socket/Test.md
+            - Process : 
+                - Process: Project/Backend server/ADF/Process/Process.md
+            - Monitor-scheduling:
+                - Business requirements: Project/Backend server/ADF/Monitor-scheduling/Business requirements.md
+                - Scheduling module: Project/Backend server/ADF/Monitor-scheduling/Scheduling module.md
+                - Process heartbeat:  Project/Backend server/ADF/Monitor-scheduling/Process heartbeat.md
+                - Guardian module: Project/Backend server/ADF/Monitor-scheduling/Guardian module.md
+                - Service strategy: Project/Backend server/ADF/Monitor-scheduling/Service strategy.md
+            - Tools:
+                - Deletefiles: Project/Backend server/ADF/Tools/Deletefiles.md
+                - Gzipfiles: Project/Backend server/ADF/Tools/Gzipfiles.md
+            - Transmission :
+                - Ftp:
+                    - Ftp: Project/Backend server/ADF/Transmission/Ftp/Ftp.md
+                    - FtpCom : Project/Backend server/ADF/Transmission/Ftp/FtpCom.md
+                    - Encapsulate-C: 
+                        - Open-lib: Project/Backend server/ADF/Transmission/Ftp/Open-lib.md
+                        - Encapsulate: Project/Backend server/ADF/Transmission/Ftp/Encapsulate.md
+                - TCP:
+                    - TCP: Project/Backend server/ADF/Transmission/Tcp/TCP.md
+        - Oracle:
+            - Type of data: Project/Backend server/Oracle/Type of data.md
+            - Table: Project/Backend server/Oracle/Table.md
+
+  - IELTS:
+      - Listen: IELTS/Listen/Concept.md
+      - Read: IELTS/Read/Concept.md
+      - Writing: IELTS/Writing/Concept.md
+      - Speaking: IELTS/Speaking/Concept.md
+
+  - Note:
+      - BuildSite: Notes/Buildsite.md
+      - Environment:
+          - Mambaforge: Notes/Environment/Mambaforge.md
+          - VsCode C++: Notes/Environment/VsC++.md
+          - NVM: Notes/Environment/NVM.md
+          - Server: Notes/Environment/DD.md
+          - Oracle: Notes/Environment/oracle.md
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
+extra:
+  generator: false
+
+extra_css:
+  - mkdocs/css/no-footer.css
+  - mkdocs/css/extra.css
+
+extra_javascript:
+  - mkdocs/css/extra.js
+  - https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js
+  - https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js

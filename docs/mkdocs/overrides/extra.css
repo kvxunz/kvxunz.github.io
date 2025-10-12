@@ -1,0 +1,12 @@
+.md-header__inner {
+    padding: 0 20px; /* 控制导航栏左右边距 */
+}
+
+.md-header__title {
+    margin-left: 20px; /* 控制标题与Logo的间距 */
+}
+
+
+.md-header__button.md-icon[for="__search"] {
+    margin-right: 20px; /* 控制搜索框的右侧间距 */
+}

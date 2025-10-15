@@ -251,6 +251,8 @@ nav:
           - NVM: Notes/Environment/NVM.md
           - Server: Notes/Environment/DD.md
           - Oracle: Notes/Environment/oracle.md
+      - Git:
+          - Hash: Notes/Environment/Hash.md
           - Git: Notes/Environment/Git.md
 
 markdown_extensions:

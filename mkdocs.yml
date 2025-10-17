@@ -251,7 +251,7 @@ nav:
           - NVM: Notes/Environment/NVM.md
           - Server: Notes/Environment/DD.md
           - Oracle: Notes/Environment/oracle.md
-          - JupyterLab: docs/Notes/Environment/JupyterLab.md
+          - JupyterLab: Notes/Environment/JupyterLab.md
       - Git:
           - Hash: Notes/Environment/Hash.md
           - Git: Notes/Environment/Git.md

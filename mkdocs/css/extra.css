@@ -1,0 +1,33 @@
+/* 将导航栏（左侧）距离最左侧20px */
+.md-header__inner .md-header__title {
+    margin-left: 20px;
+}
+
+/* 将搜索框（右侧）距离最右侧20px */
+.md-header__inner .md-header__button {
+    margin-right: 20px;
+}
+
+/* 确保导航栏和搜索框在同一行并正确对齐 */
+.md-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 隐藏滚动条但保留滚动功能 - Chrome/Safari/Edge */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* 隐藏滚动条但保留滚动功能 - Firefox */
+* {
+    scrollbar-width: none;
+}
+
+/* 隐藏滚动条但保留滚动功能 - IE/Edge 旧版本 */
+* {
+    -ms-overflow-style: none;
+}
+

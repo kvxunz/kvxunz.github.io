@@ -255,6 +255,8 @@ nav:
       - Git:
           - Hash: Notes/Environment/Hash.md
           - Git: Notes/Environment/Git.md
+      - xz:
+          - condition: Notes/Environment/zz.md
 
 markdown_extensions:
   - abbr
